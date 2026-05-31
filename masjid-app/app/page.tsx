@@ -253,7 +253,7 @@ export default function Home() {
   const totalExpenses=filteredExpenses.reduce((s,e)=>s+Number(e.amount||0),0);
   const balance=totalDonations-totalExpenses;
 
-  const canAdd = role === "admin" || role === "accountant" || role === "data_entry";
+  const canAdd = true;
   const canEdit = role === "admin" || role === "accountant";
   const canDelete = role === "admin";
   const canExport = role === "admin" || role === "accountant";
